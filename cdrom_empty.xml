@@ -1,0 +1,4 @@
+<disk device='cdrom' type='file'>
+  <driver name='qemu' type='raw'/>
+  <target dev='hda' bus='ide'/>
+</disk>
