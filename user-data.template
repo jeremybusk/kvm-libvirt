@@ -1,0 +1,8 @@
+#cloud-config
+password: {{vm_userpass}}
+chpasswd: {expire: False}
+ssh_pwauth: True
+ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2iZBr tmpkey
+runcmd:
+  - echo "Example 1"
